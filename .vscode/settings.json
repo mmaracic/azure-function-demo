@@ -1,0 +1,17 @@
+{
+    "azureFunctions.javaBuildTool": "gradle",
+    "azureFunctions.deploySubpath": "ml-data-collector/build/azure-functions/ml-data-collector-1690405820229",
+    "azureFunctions.projectLanguage": "Java",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "package (functions)",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+          "source": "PowerShell",
+          "icon": "terminal-powershell",
+          "args": ["-ExecutionPolicy", "Bypass"]
+        }
+      },
+      "terminal.integrated.defaultProfile.windows": "PowerShell",
+      
+}

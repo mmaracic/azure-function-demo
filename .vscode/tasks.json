@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "func",
+			"label": "func: host start",
+			"command": "host start",
+			"problemMatcher": "$func-java-watch",
+			"isBackground": true,
+			"options": {
+				"cwd": "${workspaceFolder}/ml-data-collector/build/azure-functions/ml-data-collector-1690405820229"
+			},
+			"dependsOn": "package (functions)"
+		},
+		{
+			"label": "package (functions)",
+			"command": "gradle azureFunctionsPackage",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"options": {
+				"cwd": "${workspaceFolder}/ml-data-collector"
+			}
+		}
+	]
+}
