@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "azure",
-    "dateExported": "2023-07-26T22:03:33.702Z",
+    "dateExported": "2023-07-27T00:57:29.577Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -15,6 +15,26 @@
             "sortNum": 10000,
             "created": "2023-07-26T22:03:08.327Z",
             "modified": "2023-07-26T22:03:08.327Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "test",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "e5226e94-10ca-464f-9f2a-2e405a878213",
+            "colId": "2504ab1f-db17-4f4f-8f05-16ba191604c6",
+            "containerId": "",
+            "name": "https://ml-data-collector.azurewebsites.net?name=test",
+            "url": "http://ml-data-collector.azurewebsites.net/api/HttpTriggerJava1?name=test",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-27T00:57:08.897Z",
+            "modified": "2023-07-27T00:57:08.897Z",
             "headers": [],
             "params": [
                 {

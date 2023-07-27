@@ -23,10 +23,10 @@ repositories {
 }
 
 azurefunctions {
-    resourceGroup = 'java-functions-group'
-    appName = 'ml-data-collector-1690405820229'
+    resourceGroup = 'test'
+    appName = 'ml-data-collector'
     pricingTier = 'Consumption'
-    region = 'westus'
+    region = 'eastus'
     runtime {
       os = 'windows'
       javaVersion = '17'
