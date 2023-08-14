@@ -1,5 +1,10 @@
 # Function Instructions
 
+Make sure that JAVA_HOME and GRADLE_HOME are set up (in ~/.profile):
+```
+export GRADLE_HOME="/opt/gradle/gradle-8.2.1/bin"
+export JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64/bin"
+```
 Functions can be run locally by pressing F5 or running:  
 ```
 gradle azureFunctionsRun
