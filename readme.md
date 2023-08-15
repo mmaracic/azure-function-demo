@@ -10,6 +10,17 @@ Make sure that .NET SDK is installed  (needed for EventHub extensions and possib
 sudo apt-get install -y dotnet-sdk-7.0
 ```
 https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-2204  
+
+Make sure to have AZURE CLI:  
+Install with:  
+```
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
+https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt  
+Test with:
+```
+az login
+```
 Functions can be run locally by pressing F5 or running:  
 ```
 gradle azureFunctionsRun
@@ -30,7 +41,8 @@ Try to run function code when running locally (F5) and exten extensions will off
 * To deploy from VS Code select "Azure Functions" -> "Deploy to function app", and select a function to deploy to.
 THIS DEPLOYS THE FUNCTION WRONGLY, use command line as below  
 * To deploy from command line set modify the azurefunctions configuration of build.gradle to match resource group, function name and region as listed in Azure and then call
-`gradle azureFunctionsDeploy`
+`gradle azureFunctionsDeploy`  
+If the deployment fails due to some form of unauthorised use "az login" as above (requires AZURE CLI)
 
 # EventHub
 
