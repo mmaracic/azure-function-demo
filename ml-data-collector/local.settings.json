@@ -1,0 +1,7 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "java",
+    "AzureEventHubConnection": "Endpoint=sb://ml-test.servicebus.windows.net/;SharedAccessKeyName=Default;SharedAccessKey=rokwvEQlFHpG9jIBtPffNlyl1iyPCfZWi+AEhClDIKo=;EntityPath=test-topic"
+  }
+}

@@ -1,6 +1,6 @@
 {
     "azureFunctions.javaBuildTool": "gradle",
-    "azureFunctions.deploySubpath": "ml-data-collector/build/azure-functions/ml-data-collector-1690405820229",
+    "azureFunctions.deploySubpath": "ml-data-collector/build/azure-functions/ml-data-collector",
     "azureFunctions.projectLanguage": "Java",
     "azureFunctions.projectRuntime": "~4",
     "debug.internalConsoleOptions": "neverOpen",

@@ -8,7 +8,7 @@
 			"problemMatcher": "$func-java-watch",
 			"isBackground": true,
 			"options": {
-				"cwd": "${workspaceFolder}/ml-data-collector/build/azure-functions/ml-data-collector-1690405820229"
+				"cwd": "${workspaceFolder}/ml-data-collector/build/azure-functions/ml-data-collector"
 			},
 			"dependsOn": "package (functions)"
 		},
