@@ -17,6 +17,8 @@ Install with:
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt  
+For Windows:   
+https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli  
 Test with:
 ```
 az login
