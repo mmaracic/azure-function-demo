@@ -1,5 +1,7 @@
 # Function Instructions
 
+## Setup
+
 Make sure that JAVA_HOME and GRADLE_HOME are set up (in ~/.profile):
 ```
 export GRADLE_HOME="/opt/gradle/gradle-8.2.1/bin"
@@ -9,7 +11,9 @@ Make sure that .NET SDK is installed  (needed for EventHub extensions and possib
 ```
 sudo apt-get install -y dotnet-sdk-7.0
 ```
-https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-2204  
+https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-2204 
+
+For windows download .NET SDK from https://dotnet.microsoft.com/en-us/download and install.
 
 Make sure to have AZURE CLI:  
 Install with:  
@@ -17,10 +21,25 @@ Install with:
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt  
+For Windows:   
+https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli  
 Test with:
 ```
 az login
 ```
+Login is also possible with:
+```
+az login --use-device-code
+```
+which enables login via any device or browser (not necessarily default) via url by using temporary code as intermediary.
+
+Upgrade azure CLI with:
+```
+az upgrade
+```
+On Windows this will download MSI installer of newer cli version and install it. Terminal restart is necessary to make the update visible.
+
+## Run
 Functions can be run locally by pressing F5 or running:  
 ```
 gradle azureFunctionsRun
@@ -43,6 +62,11 @@ THIS DEPLOYS THE FUNCTION WRONGLY, use command line as below
 * To deploy from command line set modify the azurefunctions configuration of build.gradle to match resource group, function name and region as listed in Azure and then call`gradle azureFunctionsDeploy`
 
 If the deployment fails due to some form of unauthorised use "az login" as above (requires AZURE CLI)
+
+## Stop
+To stop function there is the stop button on the tollbar top center.  
+Problem:   
+Usually stopping the function still leaves JVM running so the JVM process needs to be killed manually.
 
 # EventHub
 
